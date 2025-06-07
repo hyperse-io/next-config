@@ -1,4 +1,4 @@
-import { cyan } from 'picocolors';
+import picocolors from 'picocolors';
 import { type SafeParseSuccess } from 'zod';
 
 /**
@@ -10,7 +10,7 @@ export const printEnv = (
   section: string,
   zodSafeParseSuccess: SafeParseSuccess<Record<string, unknown>>
 ) => {
-  const prefix = cyan('- info'.padEnd(7));
+  const prefix = picocolors.cyan('- info'.padEnd(7));
   console.info(prefix.concat(`${section} validation successful:`));
   for (const [key, value] of Object.entries(zodSafeParseSuccess.data)) {
     console.info(prefix.concat(`${key}=${value}`));
