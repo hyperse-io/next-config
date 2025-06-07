@@ -1,0 +1,1 @@
+# @hyperse/next-config

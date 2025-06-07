@@ -1,0 +1,88 @@
+{
+  "name": "@hyperse/next-config",
+  "version": "1.0.0",
+  "description": "Type-safe environment variables and runtime configuration patterns for Next.js applications",
+  "keywords": [
+    "config",
+    "hyperse",
+    "typescript",
+    "next.js",
+    "next.js env",
+    "next.config.js",
+    "next.config.mjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hyperse-io/next-config.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./bin/",
+    "./dist/",
+    "./index.js"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "changeset": "changeset",
+    "cz": "cz",
+    "lint": "eslint .",
+    "lint-fix": "yarn lint --fix",
+    "lint-staged-files": "lint-staged --allow-empty",
+    "next": "next build",
+    "prepare": "husky",
+    "release": "yarn build && changeset publish",
+    "test": "run-s test-unit",
+    "test-task": "vitest run",
+    "test-unit": "vitest run",
+    "typecheck": "tsc --project ./tsconfig.json --noEmit"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "picocolors": "^1.1.1",
+    "zod": "^3.25.56"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.4",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@hyperse/eslint-config-hyperse": "^1.4.4",
+    "@types/node": "^22.15.30",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.28.0",
+    "execa": "^9.6.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "next": "^15.3.3",
+    "npm-run-all": "^4.1.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2"
+  },
+  "peerDependencies": {
+    "next": "^15.0.1"
+  },
+  "packageManager": "yarn@4.9.2",
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
