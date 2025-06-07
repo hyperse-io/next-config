@@ -1,5 +1,11 @@
 # @hyperse/next-config
 
+## 1.0.3
+
+### Patch Changes
+
+- [`8310fb5`](https://github.com/hyperse-io/next-config/commit/8310fb545c5ee9e1b4c4a272f559595c8f92f7a7) Thanks [@tianyingchun](https://github.com/tianyingchun)! - Named export 'cyan' not found. The requested module 'picocolors'
+
 ## 1.0.2
 
 ### Patch Changes
