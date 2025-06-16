@@ -9,5 +9,5 @@ export default defineConfig((options) => ({
   minify: false,
   treeshake: true,
   tsconfig: './tsconfig.build.json',
-  format: ['esm'],
+  format: ['esm', 'cjs'],
 }));
