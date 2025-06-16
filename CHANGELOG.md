@@ -1,5 +1,11 @@
 # @hyperse/next-config
 
+## 1.0.4
+
+### Patch Changes
+
+- [`d780197`](https://github.com/hyperse-io/next-config/commit/d7801977b9b69bac0191f6d5d2de48de52a798de) Thanks [@tianyingchun](https://github.com/tianyingchun)! - add `.cjs` exports
+
 ## 1.0.3
 
 ### Patch Changes
