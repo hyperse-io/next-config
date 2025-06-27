@@ -1,4 +1,6 @@
-import { type z, type ZodSchema } from 'zod';
+import type z from 'zod/v4';
+import type { ZodObject } from 'zod/v4';
+import { treeifyError } from 'zod/v4';
 import { printEnv } from './printEnv.js';
 
 /**
@@ -10,7 +12,7 @@ import { printEnv } from './printEnv.js';
  * ```
  * @returns The validated environment variables
  */
-export const createNextConfigEnv = <T extends ZodSchema>(
+export const createNextConfigEnv = <T extends ZodObject>(
   zodSchema: T,
   myEnv?: Record<string, string | undefined>
 ): z.infer<T> => {
@@ -19,7 +21,7 @@ export const createNextConfigEnv = <T extends ZodSchema>(
   if (!parsedEnv.success) {
     console.error(
       '❌ Invalid environment variables:',
-      JSON.stringify(parsedEnv.error.format(), null, 4)
+      JSON.stringify(treeifyError(parsedEnv.error), null, 4)
     );
     process.exit(1);
   }
