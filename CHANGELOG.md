@@ -1,5 +1,11 @@
 # @hyperse/next-config
 
+## 1.0.5
+
+### Patch Changes
+
+- [`c90052b`](https://github.com/hyperse-io/next-config/commit/c90052b12794fe5f8a25ab28d919b089b3db4945) Thanks [@tianyingchun](https://github.com/tianyingchun)! - refactor to zod 4
+
 ## 1.0.4
 
 ### Patch Changes
