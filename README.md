@@ -73,7 +73,7 @@ Validates and type-checks environment variables using Zod schemas.
 
 ```typescript
 import { createNextConfigEnv } from '@hyperse/next-config';
-import { z } from 'zod';
+import { z } from 'zod/v4';
 
 // Define your environment variable schema
 const envSchema = z.object({
@@ -97,7 +97,7 @@ Here's a complete example showing how to use both features together:
 ```typescript
 // next.config.mjs
 import { createNextConfig, createNextConfigEnv } from '@hyperse/next-config';
-import { z } from 'zod';
+import { z } from 'zod/v4';
 
 // Define and validate environment variables
 const envSchema = z.object({
