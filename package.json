@@ -1,6 +1,6 @@
 {
   "name": "@hyperse/next-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Type-safe environment variables and runtime configuration patterns for Next.js applications",
   "keywords": [
     "config",
