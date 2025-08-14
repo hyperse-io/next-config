@@ -1,6 +1,6 @@
 import picocolors from 'picocolors';
-import type { core, ZodType } from 'zod/v4';
-import { type ZodSafeParseSuccess } from 'zod/v4';
+import type { core, ZodType } from 'zod';
+import { type ZodSafeParseSuccess } from 'zod';
 
 /**
  * Prints the validated environment variables to the console
