@@ -31,7 +31,7 @@ describe('createNextConfigEnv', () => {
   it('should successfully validate environment variables', () => {
     const schema = z.object({
       PORT: z.string(),
-      DATABASE_URL: z.string().url(),
+      DATABASE_URL: z.url(),
     });
 
     process.env.PORT = '3000';
@@ -49,7 +49,7 @@ describe('createNextConfigEnv', () => {
   it('should throw error for invalid environment variables', () => {
     const schema = z.object({
       PORT: z.string(),
-      DATABASE_URL: z.string().url(),
+      DATABASE_URL: z.url(),
     });
 
     process.env.PORT = '3000';
@@ -64,7 +64,7 @@ describe('createNextConfigEnv', () => {
   it('should work with optional environment variables', () => {
     const schema = z.object({
       PORT: z.string().optional(),
-      DATABASE_URL: z.string().url(),
+      DATABASE_URL: z.url(),
     });
 
     process.env.DATABASE_URL = 'https://example.com/db';
