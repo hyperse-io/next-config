@@ -1,6 +1,5 @@
-import type z from 'zod/v4';
-import type { ZodObject } from 'zod/v4';
-import { treeifyError } from 'zod/v4';
+import type { z, ZodObject } from 'zod';
+import { treeifyError } from 'zod';
 import { printEnv } from './printEnv.js';
 
 /**

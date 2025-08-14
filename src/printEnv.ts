@@ -1,6 +1,5 @@
 import picocolors from 'picocolors';
-import type { core, ZodType } from 'zod/v4';
-import { type ZodSafeParseSuccess } from 'zod/v4';
+import type { z, ZodSafeParseSuccess, ZodType } from 'zod';
 
 /**
  * Prints the validated environment variables to the console
@@ -9,7 +8,7 @@ import { type ZodSafeParseSuccess } from 'zod/v4';
  */
 export const printEnv = <T extends ZodType>(
   section: string,
-  zodSafeParseSuccess: ZodSafeParseSuccess<core.output<T>>
+  zodSafeParseSuccess: ZodSafeParseSuccess<z.output<T>>
 ) => {
   const prefix = picocolors.cyan('- info'.padEnd(7));
   console.info(prefix.concat(`${section} validation successful:`));
