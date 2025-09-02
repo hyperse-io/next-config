@@ -1,4 +1,4 @@
-import { type NextConfig } from 'next';
+import type { NextConfig } from 'next';
 
 /**
  * A function that takes an optional Next.js config and returns a modified Next.js config
