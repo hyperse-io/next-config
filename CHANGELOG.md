@@ -1,5 +1,11 @@
 # @hyperse/next-config
 
+## 1.0.7
+
+### Patch Changes
+
+- [`ce022ef`](https://github.com/hyperse-io/next-config/commit/ce022ef28dc9a41c8b8bc52c906a5aa09bfa8cd9) Thanks [@tyc15129](https://github.com/tyc15129)! - update dependencies and upgrade Yarn to v4.9.4
+
 ## 1.0.6
 
 ### Patch Changes
