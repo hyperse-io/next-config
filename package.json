@@ -55,8 +55,8 @@
     "zod": "^4.1.5"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.1",
-    "@changesets/cli": "^2.29.6",
+    "@changesets/changelog-github": "^1.0.0",
+    "@changesets/cli": "^3.0.0",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@hyperse/eslint-config-hyperse": "^1.4.8",
@@ -80,7 +80,7 @@
   },
   "packageManager": "yarn@4.9.4",
   "engines": {
-    "node": ">=20"
+    "node": ">=22.11.0"
   },
   "publishConfig": {
     "access": "public"
