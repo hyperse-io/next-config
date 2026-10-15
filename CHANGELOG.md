@@ -1,5 +1,15 @@
 # @hyperse/next-config
 
+## 1.0.8
+
+### Patch Changes
+
+- [`ee62ab5`](https://github.com/hyperse-io/next-config/commit/ee62ab5fc903d9da309353e5bd2270ea85c74116) Thanks [@tianyingchun](https://github.com/tianyingchun)! - chore: 🔧 upgrade dependencies and tooling
+
+  - Upgrade Zod to v4.6.7 and pin TypeScript to 6.x
+  - Upgrade Yarn to v4.18.1 and refresh devDependencies (Next 16, ESLint 10, Vitest 5, tsup 9)
+  - Pass `YARN_NPM_AUTH_TOKEN` in the release workflow so Yarn Berry can authenticate against npm when publishing
+
 ## 1.0.7
 
 ### Patch Changes
